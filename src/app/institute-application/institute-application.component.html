@@ -1,0 +1,194 @@
+<app-institute-dashboard-nav-bar></app-institute-dashboard-nav-bar>
+
+<div class="container">
+  <h1 class="text-center my-3" style="font-style: monospace;">
+    Institute Application Form
+  </h1>
+</div>
+
+
+<div class="container">
+  <div class="card mb-4">
+    <div class="card-body">
+      <form action="">
+        <h4 style="font-family: monospace;"><span><svg width="1em" height="1em" viewBox="0 0 16 16"
+              class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></span> Basic Details</h4>
+        <hr>
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <label for="instituteName">Institute Name</label>
+            <input type="text" class="form-control" id="instituteName">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="instituteCategory">Institute Category</label>
+            <select id="instituteCategory" class="form-control">
+              <option selected>Government</option>
+              <option>Private</option>
+              <option>Autonomous</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="instituteCode">Institute Code</label>
+            <input type="text" id="instituteCode" class="form-control">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="instituteDiseCode">DISE Code</label>
+            <input type="text" id="instituteDiseCode" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="instituteLocation">Institute Location</label>
+            <select id="instituteLocation" class="form-control">
+              <option selected>Urban</option>
+              <option>Rural</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="instituteType">Institute Type</label>
+            <select id="instituteType" class="form-control">
+              <option selected>Medical</option>
+              <option>Engineering</option>
+              <option>Arts</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="affiliatedUniversityState">Affiliated University State</label>
+            <input id="affiliatedUniversityState" type="text" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="affiliatedUniversityName">Affiliated University/Board Name</label>
+            <input type="text" id="affiliatedUniversityName" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="admissionStarted">Year from which Admission Started</label>
+            <input type="date" id="admissionStarted" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="institutePassword">Set Password</label>
+            <input type="password" id="institutePassword" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="instituteConfirmPassword">Confirm Password</label>
+            <input type="password" id="instituteConfirmPassword" class="form-control">
+          </div>
+        </div>
+
+
+        <h4 style="font-family: monospace;"><span><svg width="1em" height="1em" viewBox="0 0 16 16"
+              class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></span> Proof of Existence of Institute</h4>
+        <hr>
+
+        <div class="custom-file mb-3">
+          <input type="file" class="custom-file-input" id="existenceCertificate">
+          <label class="custom-file-label" for="existenceCertificate">Institute Establishment/Existence
+            Certificate</label>
+        </div>
+
+        <h4 style="font-family: monospace;"><span><svg width="1em" height="1em" viewBox="0 0 16 16"
+              class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></span> Affiliated to</h4>
+        <hr>
+
+        <div class="custom-file mb-3">
+          <input type="file" class="custom-file-input" id="ffiliationCertificate">
+          <label class="custom-file-label" for="affiliationCertificate">University/Board Affiliation Certificate</label>
+        </div>
+
+        <h4 style="font-family: monospace;"><span><svg width="1em" height="1em" viewBox="0 0 16 16"
+              class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></span> Address</h4>
+        <hr>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="addressLineOne">Address Line 1</label>
+            <input type="text" id="addressLineOne" class="form-control">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="addressLineTwo">Address Line 2</label>
+            <input type="text" id="addressLineTwo" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="instituteState">State</label>
+            <input type="text" id="instituteState" class="form-control">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="instituteDistrict">District</label>
+            <input type="text" id="instituteDistrict" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="instituteCity">City</label>
+            <input type="text" id="instituteCity" class="form-control">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="institutePincode">Pincode</label>
+            <input type="text" id="institutePincode" class="form-control">
+          </div>
+        </div>
+
+        <h4 style="font-family: monospace;"><span><svg width="1em" height="1em" viewBox="0 0 16 16"
+              class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></span> Contact Details</h4>
+        <hr>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="principalName">Principal Name</label>
+            <input type="text" id="principalName" class="form-control">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="instituteEmail">Email ID</label>
+            <input type="email" id="instituteEmail" class="form-control">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-block btn-primary mb-4">Submit</button>
+        </div>
+        <div class="col">
+          <button class="btn btn-block btn-secondary mb-4">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
