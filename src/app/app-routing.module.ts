@@ -10,29 +10,30 @@ import { InstituteLoginComponent } from './institute-login/institute-login.compo
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { StudentTrackApplicationStatusComponent } from './student-track-application-status/student-track-application-status.component';
+import { InstituteTrackApplicationStatusComponent } from './institute-track-application-status/institute-track-application-status.component';
 
 
-const routes:Routes=[{path:'',component:LandingPageComponent},
-  {path:'institute',component:InstituteLoginComponent},
-  { path:'signup', component:SignUpComponent},
-  { path:'studentDashboard', component:StudentDashboardComponent},
-  { path:'studentRegistrationForm', component:StudentScholarshipFormComponent },
-  { path:'instituteDashboard', component:InstituteDashboardComponent },
-  { path:'instituteRegistrationForm', component: InstituteApplicationComponent },
-  { path:'officerDashboard', component: OfficerDashboardComponent },
-  { path:'ministryDashboard', component:MinistryDashboardComponent },
-  {path:'aboutus',component:AboutUsComponent}
-  
-  
-
-
+const routes: Routes = [
+  { path: '', component: LandingPageComponent },
+  { path: 'institute', component: InstituteLoginComponent },
+  { path: 'signup', component: SignUpComponent },
+  { path: 'studentDashboard', component: StudentDashboardComponent },
+  { path: 'studentRegistrationForm', component: StudentScholarshipFormComponent },
+  { path: 'instituteDashboard', component: InstituteDashboardComponent },
+  { path: 'instituteRegistrationForm', component: InstituteApplicationComponent },
+  { path: 'officerDashboard', component: OfficerDashboardComponent },
+  { path: 'ministryDashboard', component: MinistryDashboardComponent },
+  { path: 'aboutus', component: AboutUsComponent },
+  { path: 'studentTrackApplication', component:StudentTrackApplicationStatusComponent },
+  { path: 'instituteTrackApplication', component: InstituteTrackApplicationStatusComponent }
 ]
 
 @NgModule({
   declarations: [],
 
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
-  
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+
 })
 export class AppRoutingModule { }

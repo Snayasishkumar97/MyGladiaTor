@@ -5,16 +5,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import bootstrap from 'bootstrap';
 
 
 import { InstituteLoginComponent } from './institute-login/institute-login.component';
-
-
-
-
 import { StudentLoginComponent } from './student-login/student-login.component';
-
 import { NodalLoginComponent } from './nodal-login/nodal-login.component';
 import { MinistryLoginComponent } from './ministry-login/ministry-login.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -43,7 +37,6 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     InstituteLoginComponent,
-    
     StudentLoginComponent,
     NodalLoginComponent,
     MinistryLoginComponent,
@@ -73,9 +66,7 @@ import { AppRoutingModule } from './app-routing.module';
     ReactiveFormsModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
-  
-    
+    HttpClientModule 
   ],
   providers: [SignupService],
   bootstrap: [AppComponent]

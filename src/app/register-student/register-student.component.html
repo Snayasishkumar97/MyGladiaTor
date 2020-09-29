@@ -3,8 +3,8 @@
     <div class="row">
       <div class="col-sm">
         <label for="studentName">Name</label>
-        <input class="form-control" name="studentName" id="studentName" type="text" formControlName="studentName">
-
+        <input class="form-control" name="studentName" id="studentName" type="text" formControlName="studentName"
+          [ngClass]="{ 'is-invalid': submitted && reg.studentName.errors }">
         <div style="color: red;" *ngIf="reg.studentName.errors && (reg.studentName.touched || reg.studentName.dirty)">
           Name is required
         </div>
@@ -12,44 +12,52 @@
       </div>
       <div class="col-sm">
         <label for="studentAadhar">Aadhar No</label>
-        <input class="form-control" name="studentAadhar" id="studentAadhar" type="text" formControlName="studentAadhar">
+        <input class="form-control" name="studentAadhar" id="studentAadhar" type="text" formControlName="studentAadhar"
+          [ngClass]="{ 'is-invalid': submitted && reg.studentAadhar.errors }">
 
-        <div style="color: red;" *ngIf="reg.studentAadhar.errors && (reg.studentAadhar.touched || reg.studentAadhar.dirty)">
+        <div style="color: red;"
+          *ngIf="reg.studentAadhar.errors && (reg.studentAadhar.touched || reg.studentAadhar.dirty)">
           Aadhar Number is required
         </div>
 
       </div>
     </div>
     <label for="studentEmail">Email</label>
-    <input class="form-control" id="studentEmail" type="email" formControlName="studentEmail">
-    
+    <input class="form-control" id="studentEmail" type="email" formControlName="studentEmail"
+      [ngClass]="{ 'is-invalid': submitted && reg.studentEmail.errors }">
+
     <div style="color: red;" *ngIf="reg.studentEmail.errors && (reg.studentEmail.touched || reg.studentEmail.dirty)">
       Email is required
     </div>
-    
+
     <label for="studentMobileNo">Mobile No</label>
-    <input class="form-control" id="studentMobileNo" type="text" formControlName="studentMobileNo">
-    <div style="color: red;" *ngIf="reg.studentMobileNo.errors && (reg.studentMobileNo.touched || reg.studentMobileNo.dirty)">
+    <input class="form-control" id="studentMobileNo" type="text" formControlName="studentMobileNo"
+      [ngClass]="{ 'is-invalid': submitted && reg.studentMobileNo.errors }">
+    <div style="color: red;"
+      *ngIf="reg.studentMobileNo.errors && (reg.studentMobileNo.touched || reg.studentMobileNo.dirty)">
       Mobile No is required
     </div>
 
     <div class="row">
       <div class="col">
         <label for="studentGender">Gender</label>
-        <select class="form-control" id="studentGender" formControlName="studentGender">
+        <select class="form-control" id="studentGender" formControlName="studentGender"
+          [ngClass]="{ 'is-invalid': submitted && reg.studentGender.errors }">
           <option selected>Male</option>
           <option>Female</option>
           <option>Other</option>
         </select>
 
-        <div style="color: red;" *ngIf="reg.studentGender.errors && (reg.studentGender.touched || reg.studentGender.dirty)">
+        <div style="color: red;"
+          *ngIf="reg.studentGender.errors && (reg.studentGender.touched || reg.studentGender.dirty)">
           Gender is required
         </div>
 
       </div>
       <div class="col">
         <label for="studentDob">Birth date</label>
-        <input type="date" id="studentDob" class="form-control" formControlName="studentDob">
+        <input type="date" id="studentDob" class="form-control" formControlName="studentDob"
+          [ngClass]="{ 'is-invalid': submitted && reg.studentDob.errors }">
 
         <div style="color: red;" *ngIf="reg.studentDob.errors && (reg.studentDob.touched || reg.studentDob.dirty)">
           Date of Birth is required
@@ -57,9 +65,11 @@
       </div>
     </div>
     <label for="studentInstituteName">Institute Name</label>
-    <input id="studentInstituteName" type="text" class="form-control" formControlName="studentInstituteName">
+    <input id="studentInstituteName" type="text" class="form-control" formControlName="studentInstituteName"
+    [ngClass]="{ 'is-invalid': submitted && reg.studentInstituteName.errors }">
 
-    <div style="color: red;" *ngIf="reg.studentInstituteName.errors && (reg.studentInstituteName.touched || reg.studentInstituteName.dirty)">
+    <div style="color: red;"
+      *ngIf="reg.studentInstituteName.errors && (reg.studentInstituteName.touched || reg.studentInstituteName.dirty)">
       Institute Name is required
     </div>
   </div>

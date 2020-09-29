@@ -9,17 +9,17 @@ import { Observable } from 'rxjs';
 })
 export class SignupService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  addUser(user:Signup):Observable<Object>{
-   
-    return this.http.post("http://localhost:3000/users" , user);
-   }
- 
-   getAllUsers():Observable<Signup[]>{
-   
-     return this.http.get<Signup[]>("http://localhost:3000/users");
-   }
+  addUser(user: Signup): Observable<Object> {
+
+    return this.http.post("http://localhost:3000/users", user);
+  }
+
+  getAllUsers(): Observable<Signup[]> {
+
+    return this.http.get<Signup[]>("http://localhost:3000/users");
+  }
 }
 
 
